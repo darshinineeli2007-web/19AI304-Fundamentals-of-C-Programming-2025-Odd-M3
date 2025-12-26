@@ -253,7 +253,8 @@ int main()
 ```
 # Output:
 
-![alt text](image-2.png)
+<img width="1467" height="962" alt="image" src="https://github.com/user-attachments/assets/ddff0ac9-a902-422d-a2ad-aef6609a389b" />
+
 
 
 # Result: 
