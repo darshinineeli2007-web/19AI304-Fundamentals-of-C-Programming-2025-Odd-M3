@@ -33,11 +33,11 @@ To formulate a C program to convert a decimal number into its binary equivalent 
 
 int main() {
     int num, rem, i = 0;
-    int binary[32];  // Array to store binary digits (assuming 32-bit integer)
+    int binary[32];  
     printf("Enter a decimal number: ");
     scanf("%d", &num);
 
-    int original = num; // Store original number for printing later
+    int original = num; 
     if (num == 0) {
         printf("Binary of 0 is 0\n");
     } else {
@@ -103,18 +103,24 @@ Thus, the program was implemented and executed successfully, and the required ou
 
 int main() {
     int m, i, j, k;
-    int pos[2]; // pos[0] = row of min, pos[1] = col of min
+    int pos[2]; 
     int found = 0;
+
+    
     printf("Enter the order of the square matrix: ");
     scanf("%d", &m);
 
     int matrix[m][m];
+
+    
     printf("Enter the elements of the matrix:\n");
     for (i = 0; i < m; i++) {
         for (j = 0; j < m; j++) {
             scanf("%d", &matrix[i][j]);
         }
     }
+
+    
     printf("\nThe matrix is:\n");
     for (i = 0; i < m; i++) {
         for (j = 0; j < m; j++) {
@@ -128,7 +134,7 @@ int main() {
         int min = matrix[i][0];
         int col_index = 0;
 
-        
+       
         for (j = 1; j < m; j++) {
             if (matrix[i][j] < min) {
                 min = matrix[i][j];
@@ -157,9 +163,10 @@ int main() {
 
     return 0;
 }
+
 ```
 # Output:
-![alt text](image-1.png)
+![alt text](image-6.png)
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -199,24 +206,35 @@ Thus, the program was implemented and executed successfully, and the required ou
 int main() {
     char s[100], d[100];
     int i, j = 0, length = 0;
+
+    
     printf("Enter a string: ");
-    scanf("%[^\n]s", s);  // Reads a string with spaces until newline
+    scanf("%[^\n]s", s); 
+
+    
     while (s[length] != '\0') {
         length++;
     }
+
+    
     for (i = length - 1; i >= 0; i--) {
         d[j] = s[i];
         j++;
     }
+
+   
     d[j] = '\0';
+
+    
     printf("Reversed string: %s\n", d);
 
     return 0;
 }
+
 ```
 
 # Output:
-![alt text](image-2.png)
+![alt text](image-1.png)
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -258,12 +276,16 @@ int main() {
     char s[100];
     int visited[256] = {0}; 
     int i, j, n, count;
+
+    
     printf("Enter a string: ");
     scanf("%[^\n]", s);  
+
+    
     n = strlen(s);
 
     printf("\nCharacter Frequency:\n");
-   
+    
     for (i = 0; i < n; i++) {
         if (visited[(unsigned char)s[i]] == 0) {
             count = 0;
@@ -280,10 +302,11 @@ int main() {
     return 0;
 }
 
+
 ```
 
 # Output:
-![alt text](image-4.png)
+![alt text](image-2.png)
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -368,7 +391,7 @@ int main() {
 ```
 
 # Output:
-![alt text](image-5.png)
+![alt text](image-3.png)
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
